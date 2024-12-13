@@ -1,0 +1,25 @@
+<!-- ventas2.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas 2</title>
+    <script src="js/ventas-shared.js"></script> <!-- Incluye ventas-shared.js -->
+</head>
+<body>
+    <h1 id="nombre-cliente">Cargando nombre...</h1> <!-- Este h1 mostrará el nombre del cliente -->
+    
+    <script>
+        // Script propio de ventas2.html
+        window.onload = function() {
+            const nombreClienteElement = document.getElementById('nombre-cliente');
+            if (primerMensaje) {
+                nombreClienteElement.textContent = `Cliente: ${primerMensaje}`;
+            } else {
+                nombreClienteElement.textContent = 'No se ha recibido el nombre del cliente.';
+            }
+        };
+    </script>
+</body>
+</html>

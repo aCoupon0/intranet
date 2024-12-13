@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet DermaBox</title>
+    <link rel="stylesheet" href="../css/venta.css">
+</head>
+
+<body>
+    <h1>Formulario de Pedido</h1>
+
+    <!-- Inputs para los productos -->
+    <input type="text" id="input-limpiador" class="input-texto" placeholder="Limpiador">
+    <input type="text" id="input-hidratante" class="input-texto" placeholder="Hidratante">
+    <input type="text" id="input-bloqueador" class="input-texto" placeholder="Bloqueador">
+    <input type="text" id="input-potenciador" class="input-texto" placeholder="Potenciador">
+
+    <!-- Inputs para los datos del cliente -->
+    <input type="text" id="input-nombre" class="input-texto" placeholder="Nombre">
+    <input type="text" id="input-celular" class="input-texto" placeholder="Celular">
+    <input type="text" id="input-ciudad" class="input-texto" placeholder="Ciudad">
+    <input type="text" id="input-direccion" class="input-texto" placeholder="Dirección">
+
+    <!-- Inputs para código, cobro y método -->
+    <input type="text" id="input-codigo" class="input-texto" placeholder="Código">
+    <input type="text" id="input-cobro" class="input-texto" placeholder="Cobro">
+    <input type="text" id="input-metodo" class="input-texto" placeholder="Método de Pago">
+
+    <!-- Botón para enviar -->
+    <button id="boton-enviar" class="boton-enviar">Crear Mensajes</button>
+
+    <div class="primera-fase">
+        <div class="section-dual">
+            <div class="section-dual-title">Mensaje de Confirmación</div>
+        </div>
+        <div class="section-dual"></div>
+        <div class="section-dual"></div>
+        <div class="section-dual"></div>
+    </div>
+
+    <script src="../js/ventas-shared.js"></script>
+</body>
+
+</html>

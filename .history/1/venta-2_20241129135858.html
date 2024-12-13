@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta 2</title>
+</head>
+
+<body>
+    <h1 id="h1-numero-pedido">Número de Pedido: Cargando...</h1>
+
+    <script src="../js/ventas-shared.js"></script>
+    <script>
+        // Esperamos que el contenido se cargue antes de asignar el valor
+        window.onload = () => {
+            const h1 = document.getElementById('h1-numero-pedido');
+            
+            if (numeroPedido) {
+                h1.textContent = 'Número de Pedido: ' + numeroPedido;
+            } else {
+                h1.textContent = 'Número de Pedido no disponible.';
+            }
+        };
+    </script>
+</body>
+
+</html>
+

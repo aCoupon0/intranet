@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet DermaBox</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <button class="venta">Registrar una venta</button>
+    <button class="gasto">Registrar un gasto</button>
+    <div class="separador"></div>
+    <button class="dia">Itinerario Día</button>
+    <button class="noche">Itinerario Noche</button>
+
+    <script>
+        const ventaButton = document.querySelector('.venta');
+        ventaButton.addEventListener('click', () => {
+            window.location.href = '1/venta-1.html';
+        });
+
+        const gastoButton = document.querySelector('.gasto');
+        gastoButton.addEventListener('click', () => {
+            window.location.href = '1/gasto.html';
+        });
+
+        const itiDiaoButton = document.querySelector('.dia');
+        gastoButton.addEventListener('click', () => {
+            window.location.href = '1/iti-dia.html';
+        });
+
+        const itiNocheButton = document.querySelector('.noche');
+        gastoButton.addEventListener('click', () => {
+            window.location.href = '1/iti-noche.html';
+        });
+    </script>
+</body>
+</html>

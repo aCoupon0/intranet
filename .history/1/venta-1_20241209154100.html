@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet DermaBox</title>
+    <link rel="stylesheet" href="../css/venta.css">
+</head>
+
+<body>
+    <h1>Formulario de Pedido</h1>
+
+    <!-- Inputs para los productos -->
+    <input type="text" id="input-limpiador" class="input-texto" placeholder="Limpiador" value="Limpiador Hidratante de CeraVe">
+    <input type="text" id="input-hidratante" class="input-texto" placeholder="Hidratante" value="Tónico Centella Asiatica">
+    <input type="text" id="input-bloqueador" class="input-texto" placeholder="Bloqueador" value="ISDIN Fusion Water Magic SPF 50">
+    <input type="text" id="input-potenciador" class="input-texto" placeholder="Potenciador" value="Sérum Hialurónico 2% + B5 The Ordinary">
+
+    <!-- Inputs para los datos del cliente -->
+    <input type="text" id="input-nombre" class="input-texto" placeholder="Nombre" value="Gabriel Paris">
+    <input type="text" id="input-celular" class="input-texto" placeholder="Celular" value="3104738570">
+    <input type="text" id="input-ciudad" class="input-texto" placeholder="Ciudad" value="Bogota">
+    <input type="text" id="input-direccion" class="input-texto" placeholder="Dirección" value="Calle 144 #13-84">
+
+    <!-- Inputs para código, cobro y método -->
+    <input type="text" id="input-codigo" class="input-texto" placeholder="Código" value="19045">
+    <input type="text" id="input-cobro" class="input-texto" placeholder="Cobro" value="300.000">
+    <input type="text" id="input-metodo" class="input-texto" placeholder="Método de Pago" value="c">
+    <input type="text" id="input-fecha" class="input-texto" placeholder="Fecha de Llegada" value="Jue. 17 de Dic.">
+
+    <!-- Botón para enviar -->
+    <button id="boton-enviar" class="boton-enviar">Crear Mensajes</button>
+
+    <div class="primera-fase">
+        <div class="section-dual">
+            <div class="section-dual-title">Mensaje de Confirmación</div>
+            <div class="section-dual-1"></div>
+            <div class="section-dual-2"></div>
+        </div>
+        <div class="section-dual">
+            <div class="section-dual-title">Crear Pedido en Seguimiento</div>
+            <div class="section-dual-instruction">Crear pedido en pedidos.html y rellenar toda la información.</div>
+            <div class="section-dual-instruction">Convertir Link de Seguimiento (URL).</div>
+            <div class="section-dual-instruction">Actualizar todas las plantillas logísticas.</div>
+        </div>
+        <div class="section-dual">
+            <div class="section-dual-title">Pago Contraentrega</div>
+            <div class="section-dual-3"></div>
+        </div>
+        <div class="section-dual">
+            <div class="section-dual-title">Pago por Nequi</div>
+            <div class="section-dual-4"></div>
+            <div class="section-dual-5"></div>
+        </div>
+        
+    </div>
+
+    <div class="segunda-fase">
+
+    </div>
+
+    <script src="../js/ventas-shared.js"></script>
+</body>
+
+</html>

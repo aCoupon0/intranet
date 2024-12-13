@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet DermaBox</title>
+    <link rel="stylesheet" href="../css/gasto.css">
+</head>
+<body>
+    <h1 class="title">Itinerario Diario</h1>
+    <div class="container">
+        <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+        <div class="text-container">
+            <p>Revisar Tokens</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+        <div class="text-container">
+            <p>Actualizar Precios</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+        <div class="text-container">
+            <p>Actualizar Demora Productos</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+        <div class="text-container">
+            <p>Revisar Alarmas Twilio</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+        <div class="text-container">
+            <p>Banco o Caja (Libro Mayor)</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+        <div class="text-container">
+            <p>Actualizar Publicidad (Libro Mayor) - Si Aplica</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="checkbox" onclick="toggleCheckbox(this)"></div>
+        <div class="text-container">
+            <p>Actualizar Libro Diario</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleCheckbox(element) {
+            element.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

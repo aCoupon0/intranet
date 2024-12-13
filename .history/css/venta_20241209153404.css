@@ -1,0 +1,201 @@
+body {
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    color: #333;
+    gap: 1.5vw;
+    padding-top: 5vh;
+}
+
+input {
+    width: 80vw; /* Ocupa el 80% del ancho del contenedor */
+    height: 8vh; /* Altura dinámica según el viewport */
+    padding: 10px;
+    font-size: 3vh;
+    border: 1px solid #ccc;
+    border-radius: 5vw;
+    margin-bottom: 20px; /* Separación del botón */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.boton-enviar {
+    width: 20%; /* Mismo ancho que el input */
+    padding: 10px;
+    height: 7vh; /* Misma altura que el input */
+    font-size: 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5vw;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.boton-enviar:hover {
+    background-color: #0056b3;
+}
+
+
+.primera-fase {
+    width: 100%;
+    height: auto;
+    padding: 5% 5vh 5% 5vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #ccc;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.section-dual {
+    width: 20%;
+    height: 80vh;
+    border-radius: 5vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.section-dual-title {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.section-dual-instruction {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10%;
+    box-sizing: border-box;
+    color: #0056b3;
+}
+
+.section-dual-1 {
+    width: 100%;
+    height: 65%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.339);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5%;
+}
+
+
+.section-dual-2 {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5%;
+}
+
+.section-dual-3 {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5%;
+}
+
+.section-dual-4 {
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.339);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5%;
+}
+
+
+.section-dual-5 {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 5%;
+    flex-direction: column;
+}
+
+
+.segunda-fase {
+    width: 100%;
+    height: auto;
+    padding: 5% 5vh 5% 5vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #ffffff;
+    flex-direction: column;
+}
+
+.producto-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 10%;
+    box-sizing: border-box;
+}
+
+.producto-checkbox {
+    width: 50px; /* Tamaño de la checkbox */
+    height: 50px; /* Tamaño de la checkbox */
+    cursor: pointer; /* Cambia el cursor para indicar interactividad */
+    margin-top: 15px;
+    display: yflex;
+    justify-content: center;
+    align-items: center;
+}
+
+.producto-item span {
+    font-size: 18px; /* Tamaño del texto */
+    line-height: 1.5; /* Espaciado para mejor lectura */
+    font-weight: 800; /* Peso de la fuente para hacerla más visible */
+    color: #333; /* Color del texto */
+    font-size: 15px;
+}
