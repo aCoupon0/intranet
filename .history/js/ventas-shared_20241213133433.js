@@ -8,34 +8,20 @@ document.getElementById("boton-enviar").addEventListener("click", () => {
     const ciudad = document.getElementById("input-ciudad").value.trim();
     const direccion = document.getElementById("input-direccion").value.trim();
     const cobro = document.getElementById("input-cobro").value.trim();
-    const metodoPago = document.querySelector("#input-metodo").value;
 
     // Construir el mensaje con saltos de línea en HTML
-    let mensaje = `Hola *${nombre}*.<br><br>Gracias por tu compra en DermaBox. Tu pedido *#${codigo}* ha sido confirmado y está en preparación.<br><br>Por favor confirma los siguientes datos:<br><br>*Información del cliente*<br>`;
-    if (nombre) mensaje += ` - *${nombre}*<br>`;
-    if (ciudad) mensaje += ` - *${ciudad}*<br>`;
-    if (direccion) mensaje += ` - *${direccion}*<br>`;
-    
+    let mensaje = `Hola *${nombre}*.<br><br>Gracias por tu compra en DermaBox. Tu pedido *#${codigo}* ha sido confirmado y está en preparación.<br><br>Por favor confirma los siguientes datos:<br><br>*Pedido*<br>`;
 
-    mensaje += `<br>*Pedido*<br>`;
     if (limpiador) mensaje += ` - *${limpiador}*<br>`;
     if (hidratante) mensaje += ` - *${hidratante}*<br>`;
     if (bloqueador) mensaje += ` - *${bloqueador}*<br>`;
     if (potenciador) mensaje += ` - *${potenciador}*<br>`;
+    if (cobro) mensaje += `*$${cobro}*<br>`;
 
-    mensaje += `<br>*Pago*<br>`;
-    if (metodoPago) {
-        let metodoTexto = "";
-        if (metodoPago === "c") {
-            metodoTexto = "Contraentrega";
-        } else if (metodoPago === "n") {
-            metodoTexto = "Nequi";
-        } else {
-            metodoTexto = metodoPago; // Mantén el valor original si no es "c" o "n"
-        }
-        mensaje += ` - *${metodoTexto}*<br>`;
-    }
-    if (cobro) mensaje += ` - *$${cobro}*<br>`;
+    mensaje += `<br>*Información del Cliente*<br>`;
+    if (nombre) mensaje += ` - *${nombre}*<br>`;
+    if (ciudad) mensaje += ` - *${ciudad}*<br>`;
+    if (direccion) mensaje += ` - *${direccion}*<br>`;
     
 
     // Mostrar el mensaje en el div correspondiente
@@ -44,13 +30,17 @@ document.getElementById("boton-enviar").addEventListener("click", () => {
 
 
     // Construir el mensaje para section-dual-2
-    const mensaje2 = `Para efectuar el envío necesitamos los siguientes datos:<br><br> - Número de cédula<br> - Detalles de dirección (Casa, Conjunto, Edificio...)<br>`;
+    const mensaje2 = `Para hacer el envío necesitamos los siguientes datos:<br><br> - Número de cédula<br> - Detalles de dirección (Casa, Conjunto, Edificio...)<br>`;
 
     // Mostrar el mensaje en section-dual-2
     const sectionDual2 = document.querySelector(".section-dual-2");
     sectionDual2.innerHTML = mensaje2;
-    
+
+
+
+    const metodoPago = document.querySelector("#input-metodo").value;
     const fechaLlegada = document.querySelector("#input-fecha").value; // Asegúrate de que esta variable obtenga el input correcto para la fecha.
+    const linkSeguimiento = "https://tu-link-de-seguimiento.com"; // Proporciona aquí el link de seguimiento.
 
     if (metodoPago === "n") {
         // Rellenar section-dual-4

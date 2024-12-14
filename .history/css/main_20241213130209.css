@@ -17,11 +17,11 @@ h1 {
 }
 
 button {
-    width: 80%;
+    width: 78%;
     height: 9vh;
     border: none;
     border-radius: 10vw;
-    font-size: 5vw;
+    font-size: 1.3vw;
 }
 
 button:hover {

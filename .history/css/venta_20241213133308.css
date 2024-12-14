@@ -235,7 +235,7 @@ input {
 
 .tercera-fase-1 {
     width: 50%;
-    height: auto;
+    height: 60vh;
     border-right: 1px solid rgb(184, 184, 184);
     display: flex;
     justify-content: flex-start;
@@ -248,7 +248,7 @@ input {
 
 .tercera-fase-2 {
     width: 50%;
-    height: auto;
+    height: 60vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -274,7 +274,7 @@ input {
 
 /* Checkbox personalizado */
 .checkbox {
-    width: 10vw; /* Tamaño del checkbox */
+    width: 30px; /* Tamaño del checkbox */
     height: 30px;
     background-color: white; /* Color inicial (blanco) */
     border: 2px solid #007BFF; /* Borde azul */

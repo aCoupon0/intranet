@@ -24,18 +24,8 @@ document.getElementById("boton-enviar").addEventListener("click", () => {
     if (potenciador) mensaje += ` - *${potenciador}*<br>`;
 
     mensaje += `<br>*Pago*<br>`;
-    if (metodoPago) {
-        let metodoTexto = "";
-        if (metodoPago === "c") {
-            metodoTexto = "Contraentrega";
-        } else if (metodoPago === "n") {
-            metodoTexto = "Nequi";
-        } else {
-            metodoTexto = metodoPago; // Mantén el valor original si no es "c" o "n"
-        }
-        mensaje += ` - *${metodoTexto}*<br>`;
-    }
-    if (cobro) mensaje += ` - *$${cobro}*<br>`;
+    if (metodoPago) mensaje += ` - *${metodoPago}*<br>`;
+    if (hidratante) mensaje += ` - *${hidratante}*<br>`;
     
 
     // Mostrar el mensaje en el div correspondiente
